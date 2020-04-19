@@ -43,7 +43,7 @@ pv-nfs-data   1Gi        RWX            Retain           Bound    default/pvc-nf
 
 3. Define label to the worker nodes in order to set constraint of the deployment only run on worker nodes.\
 In this example I have 2 worker nodes. Please change worker01 and worker02 to your real node name. \
-This is just extra step. You can skip this step but you need to remove nodeSelector field on nfs-nginx.yaml.
+This is just extra step. You can skip this step but you need to remove **nodeSelector** field on nfs-nginx.yaml.
  
 ```
 # kubectl label nodes <worker01> role=worker
