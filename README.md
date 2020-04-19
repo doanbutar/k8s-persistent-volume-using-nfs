@@ -41,8 +41,8 @@ NAME          CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM         
 pv-nfs-data   1Gi        RWX            Retain           Bound    default/pvc-nfs-data                           17m
 ```
 
-3. Define label to the worker nodes in order to set constraint of the deployment only run on worker nodes.
-In this example I have 2 worker nodes. Please change worker01 and worker02 to your real node name. 
+3. Define label to the worker nodes in order to set constraint of the deployment only run on worker nodes.\
+In this example I have 2 worker nodes. Please change worker01 and worker02 to your real node name. \
 This is just extra step. You can skip this step but you need to remove nodeSelector field on nfs-nginx.yaml.
  
 ```
